@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/golang-chat-ai:pr-${{ github.event.number }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/golang-chat-ai:pr-preview

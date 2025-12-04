@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - main
-
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Application version'
+        required: false
+        type: string
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
