@@ -1,0 +1,1 @@
+In this folder you will have the routing for the API v1. It should call the services in the internal/services folder.

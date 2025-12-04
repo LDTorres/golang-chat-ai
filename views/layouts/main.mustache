@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Title}} - BoreDev Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Zinc Palette-ish */
+            --bg-main: #09090b; /* Zinc 950 */
+            --bg-sidebar: #18181b; /* Zinc 900 */
+            --bg-input: #27272a; /* Zinc 800 */
+            --border-color: #27272a; /* Zinc 800 */
+            --text-primary: #f4f4f5; /* Zinc 100 */
+            --text-secondary: #a1a1aa; /* Zinc 400 */
+            --accent: #2563eb; /* Blue 600 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3f3f46; /* Zinc 700 */
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #52525b; /* Zinc 600 */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        main: '#09090b',
+                        sidebar: '#18181b',
+                        input: '#27272a',
+                        border: '#27272a',
+                        primary: '#f4f4f5',
+                        secondary: '#a1a1aa',
+                        accent: '#2563eb',
+                        'accent-hover': '#1d4ed8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="h-screen overflow-hidden bg-main text-primary">
+    {{{embed}}}
+</body>
+</html>
