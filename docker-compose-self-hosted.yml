@@ -1,0 +1,7 @@
+services:
+  golang-chat-ai:
+    image: ldtorres/golang-chat-ai:latest
+    ports:
+      - "8091:3000"
+    volumes:
+      - ../files/golan-chat-ai:/app
