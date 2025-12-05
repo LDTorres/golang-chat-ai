@@ -15,7 +15,6 @@ WORKDIR /root/
 
 COPY --from=builder /app/main .
 COPY --from=builder /app/views ./views
-COPY --from=builder /app/.env .
 
 EXPOSE 3000
 
